@@ -15,7 +15,7 @@ class DefaultController extends Main
             $a = unserialize($a);
             $this->mainView->render(BASE_PATH . "/app/view/HomePageView.php", $a);
         }else {
-            echo "You are not autorize, sign up<br>" . "<a href='/Registeration'>SIGN UP</a>";
+            echo "You are not autorize<br>" . "<a href='/Registeration'>SIGN UP</a>" . " or " . "<a href='/Login'>LOGIN</a>" ;
         }
     }
     /*public function logout () {

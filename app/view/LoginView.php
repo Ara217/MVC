@@ -12,9 +12,9 @@
 <form action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post">
     <input type="email" name="email" placeholder="EMAIL"><br>
     <?php
-    if(isset($wrong)) {
-        echo "<p class='redAlert'>" . $wrong . "</p>";
-    }
+        if(isset($wrong)) {
+            echo "<p class='redAlert'>" . $wrong . "</p>";
+        }
     ?>
     <input type="password" name="password" placeholder="PASSWORD"><br>
     <input type="submit" value="LOG IN">
